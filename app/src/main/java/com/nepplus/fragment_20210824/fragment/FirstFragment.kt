@@ -28,12 +28,18 @@ class FirstFragment : Fragment() {
 //    이 클래스 : 화면 X, 화면에 올라가는 부품 O
 //    프래그먼트의 onCreate는 화면도 준비되기 전 -> 동작시키면 에러 가능
 
-    override fun onAttach(context: Context) {
-        super.onAttach(context)
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
 
         logBtn.setOnClickListener {
             Log.d("fragment", "로그버튼 눌림")
         }
+    }
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+
+
     }
 
 }

@@ -9,6 +9,10 @@
     android:padding="20dp"
     tools:context=".MainActivity">
 
-
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:tag="첫프래그먼트"
+        class="com.nepplus.fragment_20210824.fragment.FirstFragment"/>
 
 </LinearLayout>
