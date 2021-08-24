@@ -9,24 +9,39 @@
     android:padding="20dp"
     tools:context=".MainActivity">
 
-    <fragment
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:tag="firstFrag"
-        class="com.nepplus.fragment_20210824.fragment.FirstFragment"/>
+        android:layout_height="match_parent">
 
-    <fragment
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:tag="secondFrag"
-        class="com.nepplus.fragment_20210824.fragment.SecondFragment"
-        android:layout_marginTop="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <fragment
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:tag="thirdFrag"
-        class="com.nepplus.fragment_20210824.fragment.FirstFragment"
-        android:layout_marginTop="10dp"/>
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:tag="firstFrag"
+                class="com.nepplus.fragment_20210824.fragment.FirstFragment"/>
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:tag="secondFrag"
+                class="com.nepplus.fragment_20210824.fragment.SecondFragment"
+                android:layout_marginTop="10dp"/>
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:tag="thirdFrag"
+                class="com.nepplus.fragment_20210824.fragment.FirstFragment"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
 
 </LinearLayout>
